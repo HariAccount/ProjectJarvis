@@ -1,2 +1,2 @@
 # ProjectJarvis
-This Project is to same all my Tutorials
+This Project is to save all my Tutorials
