@@ -16,7 +16,7 @@ public class Module1and2 {
     String url="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 
     @Test
-    public void driver(){
+    public void TC1_driver(){
         System.setProperty("WebDriver.chrome.driver","C:\\Users\\pc\\Downloads\\chromedriver_win32\\chromedriver.exe");
          driver= new ChromeDriver();
         driver.get(url);
@@ -24,7 +24,7 @@ public class Module1and2 {
     }
 
     @Test
-    public void login(){
+    public void TC2_login(){
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement userName= driver.findElement(By.name("username"));
         userName.sendKeys("Admin");
@@ -37,14 +37,14 @@ public class Module1and2 {
     }
 
     @Test
-    public void myInfo(){
+    public void TC3_ValidatingMyInfo(){
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement myIn= driver.findElement(By.xpath("//*[@id='app']/div[1]/div[1]/aside/nav/div[2]/ul/li[6]/a/span"));
         myIn.click();
     }
 
     @Test
-    public void personalDetails(){
+    public void TC4_ValidatingpersonalDetails(){
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement pDetails= driver.findElement(By.xpath("//*[@class='orangehrm-tabs-item --active']"));
         pDetails.click();
