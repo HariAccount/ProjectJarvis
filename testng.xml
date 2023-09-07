@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/pc/IdeaProjects/Seleniumdemo/src/testNGFramework">
+        <classes>
+            <class name="testNGFramework.DriveACar">
+                <methods>
+                    <include name="startTheCar"/>
+                    <include name="startTheMusic"/>
+                    <include name="putFirstGear"/>
+                    <include name="putSecondGear"/>
+                    <include name="putThirdGear"/>
+                    <include name="putFourthGear"/>
+                </methods>
+            </class>
+            <class name="testNGFramework.SampleTestCase">
+                <methods>
+                    <include name="TC1"/>
+                    <include name="TC2"/>
+                    <include name="TC3"/>
+                    <include name="TC4"/>
+                </methods>
+            </class>
+            <class name="testNGFramework.SuiteDemo">
+                <methods>
+                    <include name="openGoogle"/>
+                    <include name="openAmazon"/>
+                    <include name="openNetflix"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
