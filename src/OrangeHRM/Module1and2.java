@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.BeforeMethod;
+//import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -25,7 +25,7 @@ public class Module1and2 {
 
     @Test
     public void TC2_login(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement userName= driver.findElement(By.name("username"));
         userName.sendKeys("Admin");
         Actions action= new Actions(driver);
@@ -38,14 +38,14 @@ public class Module1and2 {
 
     @Test
     public void TC3_ValidatingMyInfo(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement myIn= driver.findElement(By.xpath("//*[@id='app']/div[1]/div[1]/aside/nav/div[2]/ul/li[6]/a/span"));
         myIn.click();
     }
 
     @Test
-    public void TC4_ValidatingpersonalDetails(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    public void TC4_ValidatingPersonalDetails(){
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement pDetails= driver.findElement(By.xpath("//*[@class='orangehrm-tabs-item --active']"));
         pDetails.click();
 
